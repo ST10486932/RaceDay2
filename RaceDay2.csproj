@@ -21,5 +21,10 @@
   <ItemGroup>
     <Folder Include="Migrations\" />
   </ItemGroup>
-
+	<ItemGroup>
+		<Compile Remove="Race_Day_2\**" />
+		<Content Remove="Race_Day_2\**" />
+		<EmbeddedResource Remove="Race_Day_2\**" />
+		<None Remove="Race_Day_2\**" />
+	</ItemGroup>
 </Project>
