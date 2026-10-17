@@ -1,37 +1,20 @@
-# RaceDay2 - Event Management System
+## How to Run This Project
 
-## Project Overview
-RaceDay2 is a web-based event management platform for South African road running, walking, and cycling events. This project is Part 2 of the Portfolio of Evidence (PROG6212).
+### Prerequisites
+- .NET 8 SDK
+- SQL Server (or SQL Server Express)
 
-## Features
-- User authentication with Identity (Admin, Organiser, Participant roles)
-- Event management (create, edit, delete events)
-- Category management
-- Participant enrolments
-- Race results capture
+### Setup Instructions
+1. Clone the repository.
+2. Open `RaceDay2.sln` in Visual Studio.
+3. Update the `DefaultConnection` string in `appsettings.json` to match your SQL Server instance.
+4. Open the Package Manager Console and run `Update-Database`.
+5. Press `F5` to run the application.
 
-## User Roles
-- **Admin**: Oversees the entire system
-- **Organiser**: Creates and manages events
-- **Participant**: Enrols in events and views results
+### Default Admin Login
+- **Email**: kamophathup2@gmail.com
+- **Password**: @Kamokgelo072
 
-## Technology Stack
-- ASP.NET Core MVC (.NET 8)
-- Entity Framework Core
-- SQL Server (LabVM2049939\SQLEXPRESS)
-- ASP.NET Core Identity
-
-## Setup Instructions
-1. Clone this repository
-2. Update the connection string in `appsettings.json`
-3. Run `Update-Database` in the Package Manager Console
-4. Press F5 to run the application
-
-## Default Admin Account
-- Email: `kamophathup2@gmail.com`
-- Password: `@Kamokgelo072`
-
-## Student Information
-- Name: Kamokgelo Sinyosi
-- Student Number: ST10486932
-- Module: PROG6212
+### Running Tests
+- Open the **Test Explorer** in Visual Studio (Test -> Test Explorer).
+- Click **Run All Tests**. (There are 10+ integration tests utilizing an in-memory database).
